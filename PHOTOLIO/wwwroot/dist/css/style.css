@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5 {
     font-size: 24px;
     line-height: 125%;
     color: #000000;
+    text-decoration: none;
 }
 
 @font-face {
@@ -141,6 +142,7 @@ nav {
 .number a {
     color: #F00;
     margin-left: 10px;
+    text-decoration: none;
 }
 
 .time {
@@ -205,6 +207,7 @@ nav {
 
     .login a:hover {
         color: #69c15f;
+        text-decoration: none;
     }
 /*--------------------------------------background image-------------------------------*/
 /*.backgraound {
@@ -222,6 +225,7 @@ nav {
     letter-spacing: 2px;
     margin-top: 150px;
     font-family: 'Lobster Two';
+    text-decoration: none;
 }
 
 .back h3 {
@@ -233,6 +237,7 @@ nav {
     margin-top: 550px;
     color: cornflowerblue;
     font-family: 'Lobster Two' /*, cursive*/;
+    text-decoration: none;
 }
 
 .line1 {
@@ -288,6 +293,7 @@ nav {
     color: #FFF;
     font-weight: 400;
     font-size: 22px;
+    text-decoration: none;
 }
 
 .textbox input {
@@ -338,6 +344,7 @@ nav {
     color: #515151;
     font-size: 35px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .ordaring p {
@@ -345,6 +352,7 @@ nav {
     margin-top: 15px;
     color: #e24425;
     font-size: 30px;
+    text-decoration: none;
 }
 
 .arrow, .arrow1 {
@@ -386,6 +394,7 @@ nav {
     color: #515151;
     font-size: 35px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .list h2 {
@@ -394,6 +403,7 @@ nav {
     color: #515151;
     font-size: 35px;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .mymenu h2 {
@@ -403,6 +413,7 @@ nav {
     font-size: 35px;
     font-weight: 700;
     top: 30%;
+    text-decoration: none;
 }
 
 
@@ -835,7 +846,8 @@ nav {
     color: #fff;
     font-weight: 400;
     margin-left: 5px;
-    text-align:center;
+    text-align: center;
+    text-decoration: none;
 }
 
 .social i {
@@ -881,6 +893,7 @@ nav {
     width: 100px;
     margin: 10px 0;
     text-align: center;
+    text-decoration: none;
 }
 
     .sub a {
@@ -896,6 +909,7 @@ nav {
     color: #2196F3;
     font-weight: 600;
     text-align: center;
+    text-decoration: none;
 }
 /*Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
@@ -974,8 +988,9 @@ a {
 
 abbr[title] {
     border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted
+    /*text-decoration: underline;
+    text-decoration: underline dotted*/
+    text-decoration: none;
 }
 
 b, strong {
@@ -1031,7 +1046,8 @@ hr {
 
 button, input, select, textarea, optgroup {
     font: inherit;
-    margin: 0
+    margin: 0;
+    text-decoration: none;
 }
 
 optgroup {
@@ -1043,7 +1059,8 @@ button, input {
 }
 
 button, select {
-    text-transform: none
+    text-transform: none;
+    text-decoration: none;
 }
 
 button, [type=button], [type=reset], [type=submit] {
@@ -1203,14 +1220,16 @@ a {
 }
 
 .ST-centered tr th, .ST-centered tr td {
-    text-align: center
+    text-align: center;
+    text-decoration: none;
 }
 
 .ST-table td, .ST-table th, .ST-table-all td, .ST-table-all th {
     padding: 8px 8px;
     display: table-cell;
     text-align: left;
-    vertical-align: top
+    vertical-align: top;
+    text-decoration: none;
 }
 
     .ST-table th:first-child, .ST-table td:first-child, .ST-table-all th:first-child, .ST-table-all td:first-child {
@@ -1263,7 +1282,8 @@ a {
     display: inline-block;
     padding-left: 8px;
     padding-right: 8px;
-    text-align: center
+    text-align: center;
+    text-decoration: none;
 }
 
 .ST-badge {
@@ -1290,11 +1310,13 @@ a {
 }
 
     .ST-tooltip .ST-text {
-        display: none
+        display: none;
+        text-decoration: none;
     }
 
     .ST-tooltip:hover .ST-text {
-        display: inline-block
+        display: inline-block;
+        text-decoration: none;
     }
 
 .ST-ripple:active {
@@ -1382,7 +1404,8 @@ a {
     .ST-bar-block .ST-dropdown-hover .ST-button, .ST-bar-block .ST-dropdown-click .ST-button {
         width: 100%;
         text-align: left;
-        padding: 8px 8px
+        padding: 8px 8px;
+        text-decoration: none;
     }
 
 .ST-main, #main {
@@ -1430,11 +1453,13 @@ a {
     border: none;
     white-space: normal;
     float: none;
-    outline: 0
+    outline: 0;
+    text-decoration: none;
 }
 
 .ST-bar-block.ST-center .ST-bar-item {
-    text-align: center
+    text-align: center;
+    text-decoration: none;
 }
 
 .ST-block {
@@ -1715,7 +1740,8 @@ a {
     }
 
     .ST-bar-item.ST-mobile, .ST-dropdown-hover.ST-mobile, .ST-dropdown-click.ST-mobile {
-        text-align: center
+        text-align: center;
+        text-decoration: none;
     }
 
         .ST-dropdown-hover.ST-mobile, .ST-dropdown-hover.ST-mobile .ST-btn, .ST-dropdown-hover.ST-mobile .ST-button, .ST-dropdown-click.ST-mobile, .ST-dropdown-click.ST-mobile .ST-btn, .ST-dropdown-click.ST-mobile .ST-button {
@@ -2149,19 +2175,23 @@ a {
 }
 
 .ST-left-align {
-    text-align: left !important
+    text-align: left !important;
+    text-decoration: none;
 }
 
 .ST-right-align {
-    text-align: right !important
+    text-align: right !important;
+    text-decoration: none;
 }
 
 .ST-justify {
-    text-align: justify !important
+    text-align: justify !important;
+    text-decoration: none;
 }
 
 .ST-center {
-    text-align: center !important
+    text-align: center !important;
+    text-decoration: none;
 }
 
 .ST-border-0 {
@@ -2439,111 +2469,138 @@ a {
 }
 
 .ST-text-amber, .ST-hover-text-amber:hover {
-    color: #ffc107 !important
+    color: #ffc107 !important;
+    text-decoration: none;
 }
 
 .ST-text-aqua, .ST-hover-text-aqua:hover {
-    color: #00ffff !important
+    color: #00ffff !important;
+    text-decoration: none;
 }
 
 .ST-text-blue, .ST-hover-text-blue:hover {
-    color: #2196F3 !important
+    color: #2196F3 !important;
+    text-decoration: none;
 }
 
 .ST-text-light-blue, .ST-hover-text-light-blue:hover {
-    color: #87CEEB !important
+    color: #87CEEB !important;
+    text-decoration: none;
 }
 
 .ST-text-brown, .ST-hover-text-brown:hover {
-    color: #795548 !important
+    color: #795548 !important;
+    text-decoration: none;
 }
 
 .ST-text-cyan, .ST-hover-text-cyan:hover {
-    color: #00bcd4 !important
+    color: #00bcd4 !important;
+    text-decoration: none;
 }
 
 .ST-text-blue-grey, .ST-hover-text-blue-grey:hover, .ST-text-blue-gray, .ST-hover-text-blue-gray:hover {
-    color: #607d8b !important
+    color: #607d8b !important;
+    text-decoration: none;
 }
 
 .ST-text-green, .ST-hover-text-green:hover {
-    color: #4CAF50 !important
+    color: #4CAF50 !important;
+    text-decoration: none;
 }
 
 .ST-text-light-green, .ST-hover-text-light-green:hover {
-    color: #8bc34a !important
+    color: #8bc34a !important;
+    text-decoration: none;
 }
 
 .ST-text-indigo, .ST-hover-text-indigo:hover {
-    color: #3f51b5 !important
+    color: #3f51b5 !important;
+    text-decoration: none;
 }
 
 .ST-text-khaki, .ST-hover-text-khaki:hover {
-    color: #b4aa50 !important
+    color: #b4aa50 !important;
+    text-decoration: none;
 }
 
 .ST-text-lime, .ST-hover-text-lime:hover {
-    color: #cddc39 !important
+    color: #cddc39 !important;
+    text-decoration: none;
 }
 
 .ST-text-orange, .ST-hover-text-orange:hover {
-    color: #ff9800 !important
+    color: #ff9800 !important;
+    text-decoration: none;
 }
 
 .ST-text-deep-orange, .ST-hover-text-deep-orange:hover {
-    color: #ff5722 !important
+    color: #ff5722 !important;
+    text-decoration: none;
 }
 
 .ST-text-pink, .ST-hover-text-pink:hover {
-    color: #e91e63 !important
+    color: #e91e63 !important;
+    text-decoration: none;
 }
 
 .ST-text-purple, .ST-hover-text-purple:hover {
-    color: #9c27b0 !important
+    color: #9c27b0 !important;
+    text-decoration: none;
 }
 
 .ST-text-deep-purple, .ST-hover-text-deep-purple:hover {
-    color: #673ab7 !important
+    color: #673ab7 !important;
+    text-decoration: none;
 }
 
 .ST-text-red, .ST-hover-text-red:hover {
-    color: #f44336 !important
+    color: #f44336 !important;
+    text-decoration: none;
 }
 
 .ST-text-sand, .ST-hover-text-sand:hover {
-    color: #fdf5e6 !important
+    color: #fdf5e6 !important;
+    text-decoration: none;
 }
 
 .ST-text-teal, .ST-hover-text-teal:hover {
-    color: #009688 !important
+    color: #009688 !important;
+    text-decoration: none;
 }
 
 .ST-text-yellow, .ST-hover-text-yellow:hover {
-    color: #d2be0e !important
+    color: #d2be0e !important;
+    text-decoration: none;
 }
 
 .ST-text-white, .ST-hover-text-white:hover {
-    color: #fff !important
+    color: #fff !important;
+    text-decoration: none;
 }
 
 .ST-text-black, .ST-hover-text-black:hover {
-    color: #000 !important
+    color: #000 !important;
+    text-decoration: none;
 }
 
 .ST-text-grey, .ST-hover-text-grey:hover, .ST-text-gray, .ST-hover-text-gray:hover {
-    color: #757575 !important
+    color: #757575 !important;
+    text-decoration: none;
 }
 
 .ST-text-light-grey, .ST-hover-text-light-grey:hover, .ST-text-light-gray, .ST-hover-text-light-gray:hover {
-    color: #f1f1f1 !important
+    color: #f1f1f1 !important;
+    text-decoration: none;
 }
 
 .ST-text-dark-grey, .ST-hover-text-dark-grey:hover, .ST-text-dark-gray, .ST-hover-text-dark-gray:hover {
-    color: #3a3a3a !important
+    color: #3a3a3a !important;
+    text-decoration: none;
 }
 
 .ST-border-amber, .ST-hover-border-amber:hover {
-    border-color: #ffc107 !important
+    border-color: #ffc107 !important;
+    text-decoration: none;
 }
 
 .ST-border-aqua, .ST-hover-border-aqua:hover {
@@ -2704,6 +2761,7 @@ a {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* Set a style for all buttons */
@@ -2729,6 +2787,7 @@ loginbtn:hover {
     text-align: center;
     margin: 24px 0 12px 0;
     position: relative;
+    text-decoration: none;
 }
     .imgcontainer .mysignupbtn {
         position: absolute;
@@ -2743,6 +2802,7 @@ loginbtn:hover {
         border: none;
         cursor: pointer;
         text-align: center;
+        text-decoration: none;
         border-radius: 50%;
     }
 
@@ -2927,6 +2987,7 @@ div.gallery {
 div.desc {
     padding: 15px;
     text-align: center;
+    text-decoration: none;
 }
 
 * {
@@ -2959,11 +3020,12 @@ div.desc {
     clear: both;
 }
 .ST-galleryfont {
-    background-color:white;
-    text-align:center;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
     font-family: Century;
-    font-size:18px;
-    font-weight:bold;
+    font-size: 18px;
+    font-weight: bold;
 }
 /*---------------------------------------End Gallery-----------------------------------*/
 /*----------------------------------------Image Overlay-------------------------------*/
@@ -2990,7 +3052,8 @@ div.desc {
     opacity: 0;
     color: #fff;
     padding: 20px;
-    text-align:left;
+    text-align: left;
+    text-decoration: none;
     /*background-color:white;*/
 }
 
@@ -3016,6 +3079,7 @@ div.desc {
     border-radius: 0px 0px 4px 4px;
     /*margin-left: 350px;*/
     width: 50%;
+    text-decoration: none;
 }
 
 /* style inputs and link buttons */
@@ -3099,11 +3163,13 @@ input[type=submit] {
     border: 1px solid #ccc;
     border-radius: 60%;
     padding: 8px 10px;
+    text-decoration: none;
 }
 
 /* hide some text on medium and large screens */
 .hide-md-lg {
     display: none;
+    text-decoration: none;
 }
 
 
@@ -3122,11 +3188,13 @@ input[type=submit] {
     .hide-md-lg {
         display: block;
         text-align: center;
+        text-decoration: none;
     }
 }
 #textcaplock {
     display: none;
-    color: red
+    color: red;
+    text-decoration: none;
 }
 /*------------------------------------------------------*/
 * {
@@ -3149,6 +3217,7 @@ body {
 
 h1 {
     text-align: center;
+    text-decoration: none;
 }
 
 input {

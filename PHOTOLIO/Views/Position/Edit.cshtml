@@ -3,31 +3,31 @@
     ViewBag.Title = "Position Edit";
 }
 @*<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Pizza</title>
-    <link href='https://fonts.googleapis.com/css?family=Lobster+Two:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300,700' rel='stylesheet' type='text/css' />
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pizza</title>
+        <link href='https://fonts.googleapis.com/css?family=Lobster+Two:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300,700' rel='stylesheet' type='text/css' />
 
-    <!--MOBILE DEVICE-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!--MOBILE DEVICE-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="~/wwwroot/dist/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="~/wwwroot/dist/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="~/wwwroot/dist/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="~/wwwroot/dist/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="~/wwwroot/dist/css/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="~/wwwroot/dist/css/imgoverlay.css" />
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="~/wwwroot/dist/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="~/wwwroot/dist/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="~/wwwroot/dist/css/font-awesome.css" />
+        <link rel="stylesheet" type="text/css" href="~/wwwroot/dist/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="~/wwwroot/dist/css/responsive.css" />
+        <link rel="stylesheet" type="text/css" href="~/wwwroot/dist/css/imgoverlay.css" />
 
-    <!--JS-->
+        <!--JS-->
 
-    <script type="text/javascript" src="~/wwwroot/dist/js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="~/wwwroot/dist/js/modernizr.js"></script>
-    <script src="~/wwwroot/dist/js/scripts.js"></script>
-    <script src="~/wwwroot/dist/js/waypoints.min.js"></script>
-</head>*@
+        <script type="text/javascript" src="~/wwwroot/dist/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="~/wwwroot/dist/js/modernizr.js"></script>
+        <script src="~/wwwroot/dist/js/scripts.js"></script>
+        <script src="~/wwwroot/dist/js/waypoints.min.js"></script>
+    </head>*@
 <body>
 
     <section class="editsection" style="min-height:300px;">
@@ -61,32 +61,32 @@
                     </div>
                 </div>
             </div>
-            </div>
-        </section>
-            <div class="modal" id="divSuccess" style="margin-top:80px;">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <center>
-                                <img src="~/wwwroot/dist/images/PhotolioCircleicon.ico" style="width:50px;height:50px" />
-                                <h4 class="modal-title">Edit Position</h4>
-                            </center>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p id="pMessage"></p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="ST-button ST-round ST-blue" data-dismiss="modal" onclick="window.location = '/Position/List'">Ok</button>
-                        </div>
-                    </div>
-                    <!-- /.modal-content -->
+        </div>
+    </section>
+    <div class="modal" id="divSuccess" style="margin-top:80px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <center>
+                        <img src="~/wwwroot/dist/images/PhotolioCircleicon.ico" style="width:50px;height:50px" />
+                        <h4 class="modal-title">Edit Position</h4>
+                    </center>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
                 </div>
-                <!-- /.modal-dialog -->
+                <div class="modal-body">
+                    <p id="pMessage"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="ST-button ST-round ST-blue" data-dismiss="modal" onclick="window.location = '/Position/List'">Ok</button>
+                </div>
             </div>
-    </body>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+</body>
 
 
 @section scripts{
@@ -94,4 +94,4 @@
     <script>
         setValidationRule();
     </script>
-}           
+}

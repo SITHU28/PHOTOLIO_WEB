@@ -4,8 +4,8 @@
 <head>
     <title>@ViewBag.title -PHOTOLIO</title>
 
-    <link rel="shortcut icon" type="image/x-icon" href="~/wwwroot/dist/images/PhotolioCircleicon.ico" class="ST-circle"/>
-
+    <link rel="shortcut icon" type="image/x-icon" href="~/wwwroot/dist/images/PhotolioCircleicon.ico" class="ST-circle" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lobster+Two:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,300,700' rel='stylesheet' type='text/css' />
 
@@ -66,23 +66,18 @@
 
             <div class="ST-bar ST-card-2 " id="Nav">
                 <a class="ST-bar-item ST-button ST-hide-medium ST-hide-large ST-right ST-padding-large ST-hover-white  ST-red" href="javascript:void(0);" onclick="mynavFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-                <a href="/Home/Index" class="ST-bar-item ST-button ST-left">HOME</a>
+                <a href="/Home/Index" class="ST-bar-item ST-button ST-left" style="text-decoration: none;">HOME</a>
 
                 <div class="ST-dropdown-hover ST-hide-small">
-                    <a href="/Product/List" class="ST-bar-item ST-button ST-hide-small" title="GALLERY">
+                    <a href="/Product/List" class="ST-bar-item ST-button ST-hide-small" title="GALLERY" style="text-decoration: none;">
                         <i class="fa fa-image"></i> GALLERY @*<i class="fa fa-caret-down"></i>*@
                     </a>
 
-                    @*<div class="ST-dropdown-content ST-bar-block ST-card-4">
-                            <a href="/Product/GetListByCategoryId?categoryId=1" class="ST-bar-item ST-border ST-hover-blue">Portraits</a>
-                            <a href="/Product/GetListByCategoryId?categoryId=2" class="ST-bar-item ST-border ST-hover-blue">Landscapes</a>
-                        </div>*@
-
                 </div>
-                <a href="/User/Photographers" class="ST-bar-item ST-button ST-hide-small ST-left"><i class="fa fa-camera"></i> PHOTOGRAPHERS</a>
-                <a href="/Map/Locations" class="ST-bar-item ST-button ST-hide-small ST-left"><i class="fa fa-map-o"></i> LOCATIONS</a>
-                <div class="ST-bar-item ST-navlogofont ST-hide-small ST-right " style="margin-right:25px;margin-top:3px;margin-left:25px;">
-                    <img src="~/wwwroot/dist/images/PhotolioLogo Circle.jpg" class="ST-card ST-circle" style="max-height:25px;max-width:25px;" onclick="onClick(this)" />
+                <a href="/User/Photographers" class="ST-bar-item ST-button ST-hide-small ST-left" style="text-decoration: none;"><i class="fa fa-camera"></i> PHOTOGRAPHERS</a>
+                <a href="/Map/Locations" class="ST-bar-item ST-button ST-hide-small ST-left" style="text-decoration: none;"><i class="fa fa-map-o"></i> LOCATIONS</a>
+                <div class="ST-bar-item ST-navlogofont ST-hide-small ST-right " style="margin-right:25px;margin-top:3px;margin-left:25px;text-decoration:none;">
+                    <img src="~/wwwroot/dist/images/PhotolioLogo Circle.jpg" class="ST-card ST-circle" style="max-height:25px;max-width:25px;text-decoration:none" onclick="onClick(this)" />
                 </div>
                 @*<a href="@Url.Action("Myorder", "AddToCart")" class="ST-bar-item ST-button ST-hide-small ST-right ST-hover-red">
                         <i class="fa fa-shopping-cart"></i> Your Cart <span class="badge">@Session["count"]</span>
@@ -92,8 +87,8 @@
 
                 @if (currentUser == null) //default
                 {
-                    <a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="ST-bar-item ST-button ST-hide-small ST-right ST-hover-red"><i class="fa fa-user"></i> Sign Up</a>
-                    <a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="ST-bar-item ST-button ST-hide-small ST-right ST-hover-red"><i class="fa fa-sign-in"></i> Login</a>
+                    <a  onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="ST-bar-item ST-button ST-hide-small ST-right ST-hover-red"><i class="fa fa-user"></i> Sign Up</a>
+                    <a  onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="ST-bar-item ST-button ST-hide-small ST-right ST-hover-red"><i class="fa fa-sign-in"></i> Login</a>
                 }
 
                 else if (currentUser.PositionId == 1) //admin
@@ -102,7 +97,7 @@
                     <div class="ST-dropdown-hover ST-hide-small ST-right ST-hover-red">
                         <button class=" ST-button" title="ADMIN" style="min-width:150px;">
                             @{
-                                @*<img src="data:image;base64,@System.Convert.ToBase64String(currentUser.Profile)" class="user-image ST-card" alt="User Image">*@
+                               
                                 <img src="/UserProfiles/@(currentUser.Profile)" class="ST-circle user-image ST-card" alt="User Image" />
                                 @currentUser.Name
                             }
@@ -110,10 +105,8 @@
                         <div class=" ST-dropdown-content ST-bar-block ST-card"></div>
                         <div class="ST-dropdown-content ST-bar-block ST-card" style="padding:5px; min-width:220px;">
                             <!-- User image -->
-
                             <div style="padding:5px;">
                                 <center>
-                                    @*<img src="data:image;base64,@System.Convert.ToBase64String(currentUser.Profile)" style="width:50%; height:90px; padding:5px;" class="ST-circle ST-card-2" alt="Profile" />*@
                                     <img src="/UserProfiles/@(currentUser.Profile)" style="width:120px; height:120px; padding:5px;" class="ST-circle ST-card-2" alt="Profile" />
                                 </center>
                             </div>
@@ -123,10 +116,10 @@
                             </div>
                             <div style="padding:10px;">
                                 <a href="/Product/Entry" class="ST-bar-item ST-button ST-round ST-light-gray ST-hover-blue ST-border" style="width:100% "><i class="fa fa-plus"></i> Add Photos</a>
-                                @*<a href="/Position/Entry" class="ST-bar-item ST-button ST-round ST-light-gray ST-hover-blue ST-border" style="width:100% "><i class="fa fa-plus"></i> Add Position</a>*@
                                 <a href="/Product/List" class="ST-bar-item ST-button ST-round ST-white ST-hover-blue ST-border" style="width:100% "><i class="fa fa-file-image-o"></i>  Photo List</a>
                                 <a href="/Category/List" class="ST-bar-item ST-button ST-round ST-light-gray ST-hover-blue ST-border" style="width:100% "><i class="fa fa-th"></i> Category List</a>
                                 <a href="/User/List" class="ST-bar-item ST-button ST-round ST-white ST-hover-blue ST-border" style="width:100% "><i class="fa fa-users"></i> User List</a>
+                                <a href="/Position/List" class="ST-bar-item ST-button ST-round ST-white ST-hover-blue ST-border" style="width:100% "><i class="fa fa-user-circle"></i> Position List</a>
                                 <a href="/ContactUs/List" class="ST-bar-item ST-button ST-round ST-light-gray ST-hover-blue ST-border" style="width:100% "><i class="fa fa-envelope"></i> Contact Information</a>
                                 @*<a href="/Order/MyOrderList?userId=1" class="ST-bar-item ST-button ST-hide-small ST-hover-blue ST-padding ST-border" style="width:100% "><i class="fa fa-shopping-cart"></i> Order List</a>*@
                             </div>
@@ -147,7 +140,6 @@
                         <button class=" ST-button" title="Client" style="min-width:150px;">
 
                             @{
-                                @*<img src="data:image;base64,@System.Convert.ToBase64String(currentUser.Profile)" class="user-image ST-card" alt="User Image">*@
                                 <img src="/UserProfiles/@(currentUser.Profile)" class="ST-circle user-image ST-card" alt="Profile" />
                                 @currentUser.Name
                             }
@@ -158,14 +150,12 @@
                             <div class="card">
                                 <div style="padding:10px;">
                                     <center>
-                                        @*<img src="data:image;base64,@System.Convert.ToBase64String(currentUser.Profile)" style="width:120px; height:120px; padding:5px;" class="ST-circle ST-card-2" alt="Profile" />*@
                                         <img src="/UserProfiles/@(currentUser.Profile)" style="width:120px; height:120px; padding:5px;" class="ST-circle ST-card-2" alt="Profile" />
                                     </center>
                                 </div>
                                 <br />
                                 <p>
                                     <i class="fa fa-user"></i> @currentUser.Name<br />
-                                    <i class="fa fa-info-circle"></i> @currentUser.UserBio<br />
                                     <i class="fa fa-phone"></i> @currentUser.PhoneNo<br />
                                     <i class="fa fa-home"></i> @currentUser.FullAddress<br />
                                     <i class="fa fa-envelope"></i> @currentUser.Email
@@ -174,8 +164,6 @@
                             </div>
                             <div style="padding-top:10px;">
                                 <a href="/Product/Entry" class="ST-bar-item ST-button  ST-border"><i class="fa fa-camera"></i> <span>UPLOAD PHOTO</span></a>
-                                @*<a href="#" class="ST-bar-item ST-button  ST-border"><i class="fa fa-photo"></i> <span>MY GALLERY</span></a>*@
-                                @*<a href="/Order/MyOrderList?userId=@currentUser.Id" class="ST-bar-item ST-button  ST-border"><i class="fa fa-photo"></i> <span>MY GALLERY</span></a>*@
 
                             </div>
                             <div style="padding-top:10px;">
@@ -194,7 +182,6 @@
             </div>
 
             <!-- Navbar on small screens -->
-
             <div id="mynav" class="ST-bar-block ST-white ST-hide ST-hide-medium ST-hide-large ">
                 @if (currentUser == null) //default
                 {
@@ -205,8 +192,7 @@
                 else
                 {
                     <a href="/User/Edit?Id=@currentUser.Id" class="ST-bar-item ST-button ST-padding-large">
-                        @*<img src="data:image;base64,@System.Convert.ToBase64String(currentUser.Profile)" class="user-image ST-card" alt="User Image">*@
-                        <img src="~/UserProfiles/RetrieveImage/@currentUser.Id" class="user-image ST-card" alt="User Image" />
+                        <img src="/UserProfiles/@(currentUser.Profile)" class="user-image ST-card" alt="User Image" />
                         @currentUser.Name
                     </a>
                 }
@@ -267,7 +253,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="email"><b style="color:white">&copy;</b> All right reserved 2019 Powered By <a href="https://www.facebook.com/SiThuHtetAung.AJ" target="_blank"><b style="color:red">Si Thu Htet Aung</b></a> </div>
+                    <div class="email"><b style="color:white">&copy;</b> All right reserved 2019 Powered By <a href="https://www.facebook.com/SiThuHtetAung.Alien" target="_blank" style="text-decoration:none"><b style="color:red; ">Si Thu Htet Aung</b></a> </div>
                 </div>
             </div>
         </div>
@@ -321,8 +307,6 @@
 
     @*-------------------------------------------------Sign up------------------------------------------------------*@
     <div id="id02" class="mymodal ST-card">
-
-       
         <form id="frmUser" class="frmUser ">
             <span onclick="document.getElementById('id02').style.display='none'" class="close" style="margin-top:50px; color:white;" title="Close Modal">&times;</span>
             <!-- One "tab" for each step in the form: -->
@@ -331,8 +315,6 @@
                     <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                     <img id="ProfilePrev" src="~/wwwroot/dist/images/profile.png" alt="User" style="width:100px;height:100px; max-width:30%; max-height:30%" class="ST-card ST-circle" /><br />
                 </div>
-                @*<button type="button" id="custom-button" class="ST-button" style="margin-left:140px;"><i class="fa fa-camera"></i></button>
-                    <input style=" margin-top:10px;margin-left:20px; display:none;" type="file" id="selProfile" name="selProfile" accept="image/*" onchange="ShowPreview(this)">*@
                 <p><input style="float:left; margin-bottom:10px;" type="file" id="selProfile" name="selProfile" accept="image/*" onchange="ShowPreview(this)"></p>
 
                 <p><input placeholder="User Name" name="txtUserName" id="txtUserName" onkeypress="enter(event);" oninput="this.className = ''"></p>
@@ -342,7 +324,6 @@
                 <p><input placeholder="Address" name="txtFullAddress" id="txtFullAddress" onkeypress="enter(event);" oninput="this.className = ''"></p>
                 <p><input placeholder="Phone No" name="txtPhoneNo" id="txtPhoneNo" onkeypress="enter(event);" oninput="this.className = ''"></p>
             </div>
-
             <div class="tab">
                 Login Info:
                 <p><input placeholder="Email" name="txtEmail" id="txtEmail" onkeypress="enter(event);" oninput="this.className = ''" type="email" required></p>

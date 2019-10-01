@@ -29,12 +29,15 @@
                                     <input type="hidden" id="hidVersion" value="@Model.Version" />
                                     <div class="ST-display-container">
                                         <center>
-                                            <img id="ProfilePrev" src="/UserProfiles/@(Model.Profile)" style="width:100%; height:300px; padding:5px;" alt="Profile" />
+                                            <img id="ProfilePrev" src="/UserProfiles/@(Model.Profile)" style="width:100%; height:300px; padding:5px;" alt="Profile" onclick="onClick(this)" />
                                         </center>
+                                        
                                         <div class="ST-display-bottomleft ST-container ST-text-black ST-galleryfont ST-opacity-min" style="width:100%">
                                             <h2>@Model.Name</h2>
                                             <button type="button" id="custom-button" class="ST-button"><i class="fa fa-camera"></i></button>
-                                            <input style=" margin-top:10px; display:none;" type="file" id="selProfile" name="selProfile" accept="image/*" onchange="ShowPreview(this)" value="~/UserProfiles/@(Model.Profile)" required>
+
+                                            <input style=" margin-top:10px; display:none;" type="file" id="selProfile" name="selProfile" accept="image/*" onchange="ShowPreview(this)" value="/UserProfiles/profile.jpg" required>
+
                                         </div>
                                     </div>
                                     <div class="ST-container" style="margin-top:10px;">
@@ -256,11 +259,22 @@
     </div>
 </body>
 
-
+<div id="modal010" class="ST-modal" onclick="this.style.display='none'">
+    <span class="ST-white ST-button ST-round ST-hover-red ST-xlarge ST-display-topright">&times;</span>
+    <div class="ST-modal-content ST-animate-zoomimg ST-round">
+        <img id="img01" style="width:100%">
+    </div>
+</div>
+<script>
+    function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal010").style.display = "block";
+    }
+</script>
 @section scripts{
     <script src="~/wwwroot/mine/js/User.js"></script>
     <script>
         setValidationRule();
     </script>
-   
+
 }

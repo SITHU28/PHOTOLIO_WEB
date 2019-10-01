@@ -135,11 +135,14 @@
       <LastGenOutput>DbModel.cs</LastGenOutput>
     </Content>
     <Content Include="PHOTOLIO.mdf" />
+    <Content Include="PhotolioCircleicon.ico" />
     <Content Include="PHOTOLIO_log.ldf">
       <DependentUpon>PHOTOLIO.mdf</DependentUpon>
     </Content>
     <Content Include="Scripts\json-serialize.js" />
     <Content Include="Scripts\json-serialize.min.js" />
+    <Content Include="UserProfiles\profile.jpg" />
+    <Content Include="UserProfiles\profile.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -584,7 +587,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="GALLERY\" />
-    <Folder Include="UserProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PHOTOLIO.DataModel\PHOTOLIO.DataModel.csproj">
@@ -606,6 +608,9 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PhotolioCircleicon.ico</ApplicationIcon>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
